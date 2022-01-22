@@ -10,7 +10,7 @@ bot_admin:1891485685,// admin telegram id
 
 channelsList : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@Musk_Signal','@genuinesairdropss','@PerfectAirdropOfficial'],// channels list
 
-channelscheck : ['@AirdropBen'],
+channelscheck : ['@AirdropBen' ,'@Payout_X', '@OfficialMrAirdrops' , '@TheAirdropX' , '@Musk_Signal','@genuinesairdropss','@PerfectAirdropOfficial'],
 
 dp: '*Coming soon*',
 
@@ -18,7 +18,7 @@ reffer_bonus:0.00015,// refferal bonus amount
 
 min_wd:0.0006,//min withdrawal amount
 
-daily_bonus:100000000000000,//,// daily bonus amount
+daily_bonus:00,//,// daily bonus amount
 
 currency:'SOL', //bot cuurency
 
