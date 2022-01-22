@@ -748,7 +748,7 @@ onWithdraw.on('text', async (ctx) => {
       client.createWithdrawal(json,function(err,result){
           console.log(result)
           ctx.replyWithMarkdown('*✅ Withdrawal Requested*\nYour payment is being processed automatically right now!\n\n*Secured Payment ID: *\n*'+result.id+'*')
-ctx.replyWithMarkdown(''+data.dp+'',{disable_web_page_preview: 'true'})
+// x.replyWithMarkdown(''+data.dp+'',{disable_web_page_preview: 'true'})
       ;
     
           let status = result.status 
