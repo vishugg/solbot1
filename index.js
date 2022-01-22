@@ -108,7 +108,7 @@ db.collection('pendUsers').insertOne({userId: ctx.from.id})
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
 ctx.replyWithMarkdown(
     '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
       
       }else{
       db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true}) 
@@ -116,8 +116,8 @@ ctx.replyWithMarkdown(
  
 ctx.replyWithMarkdown(
     '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-    }
+    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+  }
       }else{
   mustJoin(ctx)
   }}
@@ -226,7 +226,7 @@ if(ctx.message.text==ans){
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
 ctx.replyWithMarkdown(
     '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
        
       }else{
       db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true}) 
@@ -234,7 +234,7 @@ ctx.replyWithMarkdown(
  
 ctx.replyWithMarkdown(
     '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
     }
   }else{
   mustJoin(ctx)
@@ -524,8 +524,8 @@ starter(ctx)
 if(check.length===0){
 ctx.replyWithMarkdown(
 '🖊* Done:* Your new '+bot_cur+' wallet is\n`'+ctx.message.text+'`',
-{ reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-         
+{ reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+             
    .catch((err) => sendError(err, ctx))
    db.collection('allUsers').updateOne({userId: ctx.from.id}, {$set: {coinmail: ctx.message.text}}, {upsert: true})
    db.collection('allEmails').insertOne({email:ctx.message.text,user:ctx.from.id}) 
@@ -571,16 +571,16 @@ let dData = await db.collection('allUsers').find({userId: ctx.from.id}).toArray(
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
 ctx.replyWithMarkdown(
     '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-      
+    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+       
       }else{
       db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true}) 
 
  
 ctx.replyWithMarkdown(
     '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-    }
+    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+  }
   }else{
   mustJoin(ctx)
   }
@@ -808,8 +808,8 @@ ctx.replyWithMarkdown(''+data.dp+'',{disable_web_page_preview: 'true'})
 function starter (ctx) {
  ctx.replyWithMarkdown(
     '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', '🎰 Bonus', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-     
+    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+      
    }
 
 function sendError (err, ctx) {
