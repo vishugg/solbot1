@@ -28,8 +28,7 @@ secret:'e00C6f898fBb172400D4E6D7cAB67bFb4980e989D0471Deb703E87EA8D6c0287',
 
 payment_channel:'@Payout_X',// payment channel username
 
-tw1:'http://twitter.com/SK__COMMUNITY',
-
+tw1:'http://twitter.com/CryptoVerse_co',
 tw2:'http://Instagram.com/MrShubzzz',
 
 
